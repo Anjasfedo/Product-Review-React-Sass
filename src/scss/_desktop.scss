@@ -1,0 +1,88 @@
+
+
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+$faunces: 'Fraunces';
+$montserrat: 'Montseraat';
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $Cream;
+}
+.desktop {
+    width: 600px;
+    height: 450px;
+    // min-width: 100%;
+    // margin: 10rem;
+    display: flex;
+    .left {
+      width: 50%;
+      .images {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+      }
+    }
+    .right {
+      width: 50%;
+      border-radius: 0 1rem 1rem 0;
+      background-color: $White;
+      .content {
+        margin: 30px;
+        h2 {
+          margin: 0;
+          letter-spacing: 2px;
+          font-family: $montserrat;
+          color: $Dark-grayish-blue;
+        }
+        h1 {
+          max-width: 10ch;
+          color: $Very-dark-blue;
+        }
+        p {
+          color: $Dark-cyan;
+          font-family: $montserrat;
+        }
+        .price {
+          display: flex;
+          justify-content: flex-start;
+          // align-content: center;
+          align-items: center;
+          h1 {
+            margin-right: 2rem;
+            color: $Dark-cyan;
+          }
+          p {
+            color: $Dark-cyan;
+            text-decoration: line-through;
+          }
+        }
+
+      }
+      
+    }
+  }
+  
+  button{
+    background-color: $Dark-cyan;
+    width: 100%;
+    height: 40px;
+    box-shadow: none;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    border: none;
+    color: $White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
